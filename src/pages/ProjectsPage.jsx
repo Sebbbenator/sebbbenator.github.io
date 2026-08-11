@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import projects from "../data/projects";
+import "../css/pages/projects.css";
 
 function ProjectsPage() {
   return (

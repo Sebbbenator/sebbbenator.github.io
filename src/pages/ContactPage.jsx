@@ -1,3 +1,5 @@
+import "../css/pages/contact.css";
+
 function ContactPage() {
   return (
     <div className="page narrow">

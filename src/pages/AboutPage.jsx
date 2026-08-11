@@ -1,3 +1,5 @@
+import "../css/pages/about.css";
+
 function AboutPage() {
   return (
     <div className="page narrow">

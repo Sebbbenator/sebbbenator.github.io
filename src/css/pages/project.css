@@ -1,0 +1,14 @@
+.detail-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.75rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  display: inline-flex;
+  margin-bottom: 1.5rem;
+  color: #5b21b6;
+  font-weight: 800;
+}

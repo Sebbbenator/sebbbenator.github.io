@@ -1,0 +1,19 @@
+.hero-section {
+  display: grid;
+  gap: 1.5rem;
+  align-content: center;
+  min-height: 58svh;
+  padding: 3rem 0;
+}
+
+.hero-text {
+  max-width: 680px;
+  font-size: 1.15rem;
+}
+
+@media (max-width: 720px) {
+  .hero-section {
+    min-height: auto;
+    padding-top: 2rem;
+  }
+}
