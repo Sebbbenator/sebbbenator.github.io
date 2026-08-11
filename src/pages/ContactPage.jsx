@@ -11,15 +11,25 @@ function ContactPage() {
 
       <ul className="contact-list">
         <li>
-          <a href="mailto:dinmail@example.com">dinmail@example.com</a>
+          <a href="mailto:sebastian.galthen@gmail.com">
+            sebastian.galthen@gmail.com
+          </a>
         </li>
         <li>
-          <a href="https://github.com/username" rel="noreferrer" target="_blank">
+          <a
+            href="https://github.com/Sebbbenator"
+            rel="noreferrer"
+            target="_blank"
+          >
             GitHub
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com" rel="noreferrer" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/sebastian-galthen-a88516347/"
+            rel="noreferrer"
+            target="_blank"
+          >
             LinkedIn
           </a>
         </li>
