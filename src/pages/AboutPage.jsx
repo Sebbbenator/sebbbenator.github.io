@@ -7,7 +7,8 @@ function AboutPage() {
       <h1>Hvem er jeg?</h1>
       <p className="lead">
         Jeg er frontend-udvikler under uddannelse. Jeg bygger
-        webprojekter med fokus på ren kode, gode brugeroplevelser og et design der er i øjnfangende.
+        webprojekter med fokus på ren kode, gode brugeroplevelser og et
+        iøjnefaldende design.
       </p>
 
       <section className="info-list" aria-label="Om mig detaljer">
