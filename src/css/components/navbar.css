@@ -1,4 +1,7 @@
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -6,10 +9,19 @@
   width: min(100% - 2rem, 1120px);
   margin: 0 auto;
   padding: 1.25rem 0;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.site-header.scrolled {
+  background: var(--color-card-bg);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 8px 24px rgba(17, 24, 39, 0.04);
 }
 
 .brand {
-  color: #111827;
+  color: var(--color-heading);
   font-weight: 800;
   text-decoration: none;
 }
@@ -23,18 +35,22 @@
 
 .site-nav a {
   border-radius: 999px;
-  color: #475569;
+  color: var(--color-muted);
   padding: 0.55rem 0.8rem;
   text-decoration: none;
 }
 
 .site-nav a.active,
 .site-nav a:hover {
-  color: #111827;
-  background: #ffffff;
+  color: var(--color-heading);
+  background: var(--color-white);
 }
 
 @media (max-width: 720px) {
+  :root {
+    --nav-height: 7rem;
+  }
+
   .site-header {
     align-items: flex-start;
     flex-direction: column;
