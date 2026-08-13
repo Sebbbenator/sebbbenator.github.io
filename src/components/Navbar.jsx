@@ -27,7 +27,11 @@ function Navbar() {
   return (
     <header className={`site-header${scrolled ? " scrolled" : ""}`}>
       <NavLink className="brand" to="/">
-        Sebastian
+        <img
+          alt="Sebastian"
+          className="brand-logo"
+          src={`${import.meta.env.BASE_URL}logo.svg`}
+        />
       </NavLink>
 
       <nav className="site-nav" aria-label="Primær navigation">

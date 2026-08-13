@@ -29,6 +29,7 @@
   max-width: 220px;
   max-height: 140px;
   width: auto;
+  filter: brightness(0) invert(1);
 }
 
 .footer-year {

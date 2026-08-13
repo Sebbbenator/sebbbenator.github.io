@@ -20,14 +20,18 @@
 }
 
 .brand {
-  color: var(--color-heading);
-  font-weight: 800;
-  text-decoration: none;
-  transition: color 0.25s ease;
+  display: inline-flex;
+  align-items: center;
 }
 
-.site-header.scrolled .brand {
-  color: var(--color-footer-text);
+.brand-logo {
+  height: 2.25rem;
+  width: auto;
+  transition: filter 0.25s ease;
+}
+
+.site-header.scrolled .brand-logo {
+  filter: brightness(0) invert(1);
 }
 
 .site-nav {
