@@ -25,6 +25,8 @@ function ScrollToHash() {
 }
 
 function App() {
+  const { pathname } = useLocation();
+
   return (
     <>
       <Navbar />
@@ -40,7 +42,7 @@ function App() {
         </Routes>
       </main>
 
-      <Footer />
+      {pathname !== "/about" && <Footer />}
     </>
   );
 }
