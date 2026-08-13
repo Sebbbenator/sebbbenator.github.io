@@ -1,9 +1,70 @@
 .hero-section {
+  position: relative;
   display: grid;
+  justify-items: center;
   align-content: center;
-  gap: 0.75rem;
-  min-height: 58svh;
+  gap: 1.5rem;
+  min-height: 90svh;
   padding: 3rem 0;
+  text-align: center;
+}
+
+.hero-scroll-cue {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.25rem;
+  border-radius: 999px;
+  background: var(--color-heading);
+  color: var(--color-bg);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  transform: translateX(-50%);
+}
+
+.hero-scroll-cue-arrow {
+  display: inline-block;
+  animation: hero-scroll-bounce 1.6s ease-in-out infinite;
+}
+
+@keyframes hero-scroll-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+.hero-portrait {
+  position: relative;
+  width: clamp(320px, 48vw, 680px);
+}
+
+.hero-portrait-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-portrait-label {
+  position: absolute;
+  top: -5%;
+  left: 47%;
+  max-width: none;
+  margin: 0;
+  color: var(--color-heading);
+  font-size: clamp(2rem, 7vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: 0;
+  white-space: nowrap;
+  transform: translateX(-50%);
 }
 
 .hero-tagline {

@@ -6,10 +6,31 @@ function HomePage() {
   return (
     <div className="page home-page">
       <section className="hero-section">
-        <h1>Sebastian</h1>
+        <div className="hero-portrait">
+          <img
+            alt=""
+            className="hero-portrait-image"
+            src={`${import.meta.env.BASE_URL}selveste.svg`}
+          />
+          <h1 className="hero-portrait-label">Sebastian</h1>
+        </div>
         <p className="hero-tagline">
           Frontend-udvikler og designer under uddannelse.
         </p>
+
+        <a
+          className="hero-scroll-cue"
+          href="#projekter"
+          onClick={(event) => {
+            event.preventDefault();
+            document.getElementById("projekter")?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          Se mere
+          <span aria-hidden="true" className="hero-scroll-cue-arrow">
+            ↓
+          </span>
+        </a>
       </section>
 
       <section className="projects-section" id="projekter">
