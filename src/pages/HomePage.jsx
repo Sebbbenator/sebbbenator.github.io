@@ -2,10 +2,32 @@ import { Link } from "react-router";
 import projects from "../data/projects";
 import "../css/pages/home.css";
 
+const floatingLogos = [
+  { src: "react.svg", alt: "React", className: "hero-float-1" },
+  { src: "css.svg", alt: "CSS", className: "hero-float-2" },
+  { src: "html.svg", alt: "HTML", className: "hero-float-3" },
+  { src: "javascript.svg", alt: "JavaScript", className: "hero-float-4" },
+  { src: "figma.svg", alt: "Figma", className: "hero-float-5" },
+  { src: "github.svg", alt: "GitHub", className: "hero-float-6" },
+  { src: "photoshop.svg", alt: "Photoshop", className: "hero-float-7" },
+  { src: "vscode.svg", alt: "VS Code", className: "hero-float-8" },
+];
+
 function HomePage() {
   return (
     <div className="page home-page">
       <section className="hero-section">
+        <div aria-hidden="true" className="hero-float-icons">
+          {floatingLogos.map((logo) => (
+            <img
+              alt={logo.alt}
+              className={`hero-float-icon ${logo.className}`}
+              key={logo.src}
+              src={`${import.meta.env.BASE_URL}${logo.src}`}
+            />
+          ))}
+        </div>
+
         <div className="hero-portrait">
           <img
             alt=""
