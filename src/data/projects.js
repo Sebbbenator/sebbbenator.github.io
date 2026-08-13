@@ -2,7 +2,10 @@ const projects = [
   {
     slug: "web-app",
     title: "Hoomie",
-    logo: `${import.meta.env.BASE_URL}hoomielogo.svg`,
+    logos: [
+      `${import.meta.env.BASE_URL}hoomielogo.svg`,
+      `${import.meta.env.BASE_URL}hoomielogo1.svg`,
+    ],
     year: "2. Semester - Web App",
     summary:
       " En webapp, der hjælper med at organisere hvedagen og holde styr på aktiviteter.",
@@ -23,7 +26,11 @@ const projects = [
   {
     slug: "customer-experience",
     title: "WANTED Archives",
-    logo: `${import.meta.env.BASE_URL}wantedlogo.svg`,
+    logos: [
+      `${import.meta.env.BASE_URL}wantedlogo.svg`,
+      `${import.meta.env.BASE_URL}wantedlogo1.svg`,
+      `${import.meta.env.BASE_URL}wantedlogo2.svg`,
+    ],
     year: "2. Semester - Customer Experience",
     summary:
       "En hjemmeside, der designet til specifik målgruppe, med fokus på idensitet og brugeroplevelse.",
@@ -44,6 +51,10 @@ const projects = [
   {
     slug: "exam-project",
     title: "Optimering af Akvarie projekt",
+    logos: [
+      `${import.meta.env.BASE_URL}storcenterNordLogo.svg`,
+      `${import.meta.env.BASE_URL}nemologo.png`,
+    ],
     year: "1. Semester - Exam Project",
     summary:
       "Optimering af tidligere projekt, fokus på semantisk struktur, design og brugeroplevelse.",

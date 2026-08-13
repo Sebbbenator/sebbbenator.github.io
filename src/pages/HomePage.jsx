@@ -68,12 +68,17 @@ function HomePage() {
                 <img src={project.image} alt={`Preview af ${project.title}`} />
               </div>
               <div className="project-feature-content">
-                {project.logo && (
-                  <img
-                    alt={`${project.title} logo`}
-                    className="project-feature-logo"
-                    src={project.logo}
-                  />
+                {project.logos && project.logos.length > 0 && (
+                  <div className="project-feature-logos">
+                    {project.logos.map((logo) => (
+                      <img
+                        alt={`${project.title} logo`}
+                        className="project-feature-logo"
+                        key={logo}
+                        src={logo}
+                      />
+                    ))}
+                  </div>
                 )}
                 <h3>{project.title}</h3>
                 <ul className="project-feature-tags">

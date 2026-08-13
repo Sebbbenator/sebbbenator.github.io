@@ -212,10 +212,17 @@
   max-width: 520px;
 }
 
+.project-feature-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .project-feature-logo {
   width: auto;
   height: clamp(2.25rem, 3.6vw, 3rem);
-  margin-bottom: 0.5rem;
 }
 
 .project-feature-content h3 {
