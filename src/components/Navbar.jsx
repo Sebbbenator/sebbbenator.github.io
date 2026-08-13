@@ -38,7 +38,7 @@ function Navbar() {
         <NavLink to="/" end>
           Mit arbejde
         </NavLink>
-        <NavLink to="/about">About</NavLink>
+        <NavLink to="/about">Om mig</NavLink>
       </nav>
     </header>
   );

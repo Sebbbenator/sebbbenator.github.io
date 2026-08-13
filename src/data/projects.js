@@ -2,12 +2,13 @@ const projects = [
   {
     slug: "web-app",
     title: "Hoomie",
+    logo: `${import.meta.env.BASE_URL}hoomielogo.svg`,
     year: "2. Semester - Web App",
     summary:
       " En webapp, der hjælper med at organisere hvedagen og holde styr på aktiviteter.",
     description: "Placeholder (ved ik hvad der skal stå endnu).",
     tags: ["React", "Supabase", "Animationsdesign"],
-    image: `${import.meta.env.BASE_URL}hoomie-app.png`,
+    image: `${import.meta.env.BASE_URL}Hoomiemockup.svg`,
     links: [
       {
         label: "Live site",
@@ -22,12 +23,13 @@ const projects = [
   {
     slug: "customer-experience",
     title: "WANTED Archives",
+    logo: `${import.meta.env.BASE_URL}wantedlogo.svg`,
     year: "2. Semester - Customer Experience",
     summary:
       "En hjemmeside, der designet til specifik målgruppe, med fokus på idensitet og brugeroplevelse.",
     description: "Placeholder (ved ik hvad der skal stå endnu)",
     tags: ["Design", "Brugeroplevelse", "Proces"],
-    image: `${import.meta.env.BASE_URL}wanted-archives.png`,
+    image: `${import.meta.env.BASE_URL}wantedmockup.svg`,
     links: [
       {
         label: "Live site",
@@ -47,7 +49,7 @@ const projects = [
       "Optimering af tidligere projekt, fokus på semantisk struktur, design og brugeroplevelse.",
     description: "Placeholder (ved ik hvad der skal stå endnu).",
     tags: ["Design", "Semantisk struktur", "Optimering"],
-    image: `${import.meta.env.BASE_URL}akvarie-projekt.png`,
+    image: `${import.meta.env.BASE_URL}akvariemockup.svg`,
     links: [
       {
         label: "Live site",
@@ -67,7 +69,7 @@ const projects = [
       "Hjemmeprojekt til at holde styr på brætspil, samt få overblik over hvad man vil spille.",
     description: "Placeholder (ved ik hvad der skal stå endnu).",
     tags: ["Vercel", "Supabase", "Organisering"],
-    image: `${import.meta.env.BASE_URL}boardbase.png`,
+    image: `${import.meta.env.BASE_URL}boardbasemockup.svg`,
     links: [
       {
         label: "Live site",
@@ -87,7 +89,7 @@ const projects = [
       "Hjemmeprojekt til at holde styr på hjemmeopgaver, samt fordeling af opgaver.",
     description: "Placeholder (ved ik hvad der skal stå endnu).",
     tags: ["Vercel", "Supabase", "Struktur"],
-    image: `${import.meta.env.BASE_URL}homebase.png`,
+    image: `${import.meta.env.BASE_URL}homebasemockup.svg`,
     links: [
       {
         label: "Live site",

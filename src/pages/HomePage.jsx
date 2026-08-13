@@ -65,7 +65,15 @@ function HomePage() {
           {projects.map((project) => (
             <article className="project-feature" key={project.slug}>
               <div className="project-feature-content">
-                <h3>{project.title}</h3>
+                {project.logo ? (
+                  <img
+                    alt={project.title}
+                    className="project-feature-logo"
+                    src={project.logo}
+                  />
+                ) : (
+                  <h3>{project.title}</h3>
+                )}
                 <p>{project.summary}</p>
                 <Link className="project-feature-link" to={`/projects/${project.slug}`}>
                   Se projekt →
