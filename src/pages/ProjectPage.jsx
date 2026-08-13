@@ -12,7 +12,7 @@ function ProjectPage() {
         <p className="eyebrow">404</p>
         <h1>Projektet blev ikke fundet</h1>
         <p>Det projekt findes ikke i listen endnu.</p>
-        <Link className="button" to="/projects">
+        <Link className="button" to="/#projekter">
           Tilbage til projekter
         </Link>
       </div>
@@ -21,7 +21,7 @@ function ProjectPage() {
 
   return (
     <article className="page narrow">
-      <Link className="back-link" to="/projects">
+      <Link className="back-link" to="/#projekter">
         Tilbage til projekter
       </Link>
 

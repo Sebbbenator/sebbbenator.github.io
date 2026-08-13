@@ -17,3 +17,20 @@
     padding-top: 2rem;
   }
 }
+
+.info-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.info-list div {
+  border: 1px solid #e5ddd2;
+  border-radius: 0.75rem;
+  background: #fffaf3;
+  padding: 1rem;
+}
+
+.info-list h3 {
+  font-size: 1.15rem;
+}

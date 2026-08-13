@@ -3,8 +3,6 @@ import projects from "../data/projects";
 import "../css/pages/home.css";
 
 function HomePage() {
-  const featuredProjects = projects.slice(0, 2);
-
   return (
     <div className="page">
       <section className="hero-section">
@@ -16,29 +14,63 @@ function HomePage() {
           undervejs.
         </p>
         <div className="actions">
-          <Link className="button" to="/projects">
+          <a className="button" href="#projekter">
             Se projekter
-          </Link>
+          </a>
           <Link className="button secondary" to="/contact">
             Kontakt mig
           </Link>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" id="om-mig">
         <div className="section-heading">
-          <p className="eyebrow">Udvalgte projekter</p>
-          <h2>Start med få projekter og gør dem stærke.</h2>
+          <p className="eyebrow">Om mig</p>
+          <h2>Hvem er jeg?</h2>
+        </div>
+        <p className="lead">
+          Jeg er frontend-udvikler under uddannelse. Jeg bygger webprojekter
+          med fokus på ren kode, gode brugeroplevelser og et iøjnefaldende
+          design.
+        </p>
+
+        <div className="info-list" aria-label="Om mig detaljer">
+          <div>
+            <h3>Jeg arbejder med</h3>
+            <p>
+              React, HTML, CSS, JavaScript, designproces og digitale
+              produkter.
+            </p>
+          </div>
+          <div>
+            <h3>Jeg er nysgerrig på</h3>
+            <p>
+              Brugeroplevelser, visuel identitet og hvordan kode bliver til
+              noget brugbart.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section" id="projekter">
+        <div className="section-heading">
+          <p className="eyebrow">Projekter</p>
+          <h2>Mine projekter</h2>
         </div>
 
-        <div className="project-grid">
-          {featuredProjects.map((project) => (
+        <div className="project-grid" aria-label="Projektliste">
+          {projects.map((project) => (
             <article className="project-card" key={project.slug}>
               <img src={project.image} alt={`Preview af ${project.title}`} />
               <div className="project-card-content">
                 <p className="eyebrow">{project.year}</p>
                 <h3>{project.title}</h3>
                 <p>{project.summary}</p>
+                <ul className="tag-list">
+                  {project.tags.map((tag) => (
+                    <li key={tag}>{tag}</li>
+                  ))}
+                </ul>
                 <Link to={`/projects/${project.slug}`}>Læs mere</Link>
               </div>
             </article>
