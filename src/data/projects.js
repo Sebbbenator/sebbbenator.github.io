@@ -59,6 +59,46 @@ const projects = [
       },
     ],
   },
+  {
+    slug: "boardbase",
+    title: "Boardbase",
+    year: "2025 - hjemmeprojekt",
+    summary:
+      "Hjemmeprojekt til at holde styr på brætspil, samt få overblik over hvad man vil spille.",
+    description: "Placeholder (ved ik hvad der skal stå endnu).",
+    tags: ["Vercel", "Supabase", "Organisering"],
+    image: `${import.meta.env.BASE_URL}boardbase.png`,
+    links: [
+      {
+        label: "Live site",
+        href: "https://boardbase-rose.vercel.app/",
+      },
+      {
+        label: "GitHub repo",
+        href: "https://github.com/Sebbbenator/Boardbase",
+      },
+    ],
+  },
+  {
+    slug: "homebase",
+    title: "Homebase",
+    year: "2025 - hjemmeprojekt",
+    summary:
+      "Hjemmeprojekt til at holde styr på hjemmeopgaver, samt fordeling af opgaver.",
+    description: "Placeholder (ved ik hvad der skal stå endnu).",
+    tags: ["Vercel", "Supabase", "Struktur"],
+    image: `${import.meta.env.BASE_URL}homebase.png`,
+    links: [
+      {
+        label: "Live site",
+        href: "https://homebase-ruby.vercel.app/dashboard",
+      },
+      {
+        label: "GitHub repo",
+        href: "https://github.com/Sebbbenator/Homebase",
+      },
+    ],
+  },
 ];
 
 export default projects;
