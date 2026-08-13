@@ -20,9 +20,9 @@ function ProjectPage() {
   }
 
   return (
-    <article className="page narrow">
+    <article className="page narrow project-page">
       <Link className="back-link" to="/#projekter">
-        Tilbage til projekter
+        ← Tilbage til projekter
       </Link>
 
       <img className="detail-image" src={project.image} alt="" />

@@ -14,6 +14,10 @@
   --color-card-bg: #fffaf3;
   --color-white: #ffffff;
 
+  --color-footer-bg: #1f2e27;
+  --color-footer-text: #f4f1ea;
+  --color-footer-muted: #9fb3a6;
+
   --nav-height: 4.75rem;
 
   color: var(--color-text);
