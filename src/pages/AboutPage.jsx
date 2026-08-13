@@ -9,7 +9,7 @@ function AboutPage() {
         <img
           alt="Collage af billeder af Sebastian i form af et logo"
           className="about-photo"
-          src={`${import.meta.env.BASE_URL}logopicture.svg`}
+          src={`${import.meta.env.BASE_URL}logopicture.png`}
         />
         <div className="about-text">
           <p>
