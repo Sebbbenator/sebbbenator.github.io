@@ -175,9 +175,11 @@
 
 .project-feature {
   display: grid;
-  grid-template-columns: minmax(260px, 1fr) minmax(320px, 1.5fr);
+  grid-template-columns: minmax(320px, 1.5fr) minmax(260px, 1fr);
   align-items: center;
   gap: 3rem;
+  width: min(100%, 1080px);
+  margin: 0 auto;
   min-height: 80vh;
   scroll-snap-align: start;
   scroll-margin-top: var(--nav-height);
@@ -207,24 +209,64 @@
   display: grid;
   align-content: center;
   gap: 1rem;
-  max-width: 420px;
+  max-width: 520px;
 }
 
 .project-feature-logo {
   width: auto;
-  height: clamp(8rem, 9vw, 6rem);
+  height: clamp(2.25rem, 3.6vw, 3rem);
+  margin-bottom: 0.5rem;
+}
+
+.project-feature-content h3 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.75rem, 5vw, 4rem);
+  font-weight: 700;
+}
+
+.project-feature-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  padding: 0;
+  margin: 0.25rem 0;
+  list-style: none;
+}
+
+.project-feature-tags li {
+  color: var(--color-muted);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.project-feature-tags li::before {
+  content: "#";
 }
 
 .project-feature-link {
   display: inline-flex;
-  margin-top: 0.5rem;
-  color: var(--color-accent-strong);
-  font-weight: 800;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--color-heading);
+  border-radius: 999px;
+  color: var(--color-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  width: fit-content;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 .project-feature-link:hover {
-  text-decoration: underline;
+  background: var(--color-heading);
+  color: var(--color-bg);
+  text-decoration: none;
 }
 
 @media (max-width: 720px) {

@@ -64,23 +64,26 @@ function HomePage() {
         <div className="project-feature-list" aria-label="Projektliste">
           {projects.map((project) => (
             <article className="project-feature" key={project.slug}>
+              <div className="project-feature-media">
+                <img src={project.image} alt={`Preview af ${project.title}`} />
+              </div>
               <div className="project-feature-content">
-                {project.logo ? (
+                {project.logo && (
                   <img
-                    alt={project.title}
+                    alt={`${project.title} logo`}
                     className="project-feature-logo"
                     src={project.logo}
                   />
-                ) : (
-                  <h3>{project.title}</h3>
                 )}
-                <p>{project.summary}</p>
+                <h3>{project.title}</h3>
+                <ul className="project-feature-tags">
+                  {project.tags.map((tag) => (
+                    <li key={tag}>{tag}</li>
+                  ))}
+                </ul>
                 <Link className="project-feature-link" to={`/projects/${project.slug}`}>
                   Se projekt →
                 </Link>
-              </div>
-              <div className="project-feature-media">
-                <img src={project.image} alt={`Preview af ${project.title}`} />
               </div>
             </article>
           ))}
