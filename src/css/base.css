@@ -1,12 +1,31 @@
 :root {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
-  color: #1d2430;
-  background: #f7f4ef;
+
+  --color-bg: #f7f4ef;
+  --color-text: #1d2430;
+  --color-heading: #111827;
+  --color-body: #526173;
+  --color-muted: #475569;
+  --color-accent: #7c3aed;
+  --color-accent-strong: #5b21b6;
+  --color-border: #e5ddd2;
+  --color-border-strong: #ded6ca;
+  --color-card-bg: #fffaf3;
+  --color-white: #ffffff;
+
+  --nav-height: 4.75rem;
+
+  color: var(--color-text);
+  background: var(--color-bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-snap-type: y proximity;
 }
 
 * {
@@ -43,7 +62,7 @@ p {
 h1 {
   max-width: 760px;
   margin-bottom: 1rem;
-  color: #111827;
+  color: var(--color-heading);
   font-size: clamp(2.6rem, 8vw, 5.5rem);
   line-height: 0.95;
   letter-spacing: 0;
@@ -51,7 +70,7 @@ h1 {
 
 h2 {
   margin-bottom: 0.75rem;
-  color: #111827;
+  color: var(--color-heading);
   font-size: clamp(1.6rem, 4vw, 2.4rem);
   line-height: 1.05;
   letter-spacing: 0;
@@ -59,12 +78,12 @@ h2 {
 
 h3 {
   margin-bottom: 0.6rem;
-  color: #111827;
+  color: var(--color-heading);
   font-size: 1.35rem;
   letter-spacing: 0;
 }
 
 p {
-  color: #526173;
+  color: var(--color-body);
   line-height: 1.65;
 }

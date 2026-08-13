@@ -21,7 +21,7 @@
 
 .eyebrow {
   margin: 0;
-  color: #7c3aed;
+  color: var(--color-accent);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0;
@@ -45,17 +45,17 @@
   align-items: center;
   justify-content: center;
   min-height: 2.75rem;
-  border: 1px solid #111827;
+  border: 1px solid var(--color-heading);
   border-radius: 999px;
-  color: #ffffff;
-  background: #111827;
+  color: var(--color-white);
+  background: var(--color-heading);
   padding: 0.7rem 1rem;
   font-weight: 700;
   text-decoration: none;
 }
 
 .button.secondary {
-  color: #111827;
+  color: var(--color-heading);
   background: transparent;
 }
 
@@ -67,9 +67,9 @@
 
 .project-card {
   overflow: hidden;
-  border: 1px solid #e5ddd2;
+  border: 1px solid var(--color-border);
   border-radius: 0.75rem;
-  background: #fffaf3;
+  background: var(--color-card-bg);
 }
 
 .project-card img {
@@ -83,7 +83,7 @@
 }
 
 .project-card a {
-  color: #5b21b6;
+  color: var(--color-accent-strong);
   font-weight: 800;
 }
 
@@ -97,10 +97,10 @@
 }
 
 .tag-list li {
-  border: 1px solid #ded6ca;
+  border: 1px solid var(--color-border-strong);
   border-radius: 999px;
-  background: #ffffff;
-  color: #475569;
+  background: var(--color-white);
+  color: var(--color-muted);
   padding: 0.35rem 0.7rem;
   font-size: 0.9rem;
   font-weight: 700;
