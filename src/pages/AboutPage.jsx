@@ -2,25 +2,25 @@ import "../css/pages/about.css";
 
 function AboutPage() {
   return (
-    <div className="page narrow about-page">
-      <p className="eyebrow">Om mig</p>
-      <h1>Hvem er jeg?</h1>
-      <p className="lead">
-        Jeg er frontend-udvikler under uddannelse. Jeg bygger webprojekter
-        med fokus på ren kode, gode brugeroplevelser og et iøjnefaldende
-        design.
-      </p>
+    <div className="page about-page">
+      <h1 className="eyebrow">Om mig</h1>
 
-      <div className="about-columns" aria-label="Om mig detaljer">
-        <div className="about-column">
-          <h3>Jeg arbejder med</h3>
-          <p>React, HTML, CSS, JavaScript, designproces og digitale produkter.</p>
-        </div>
-        <div className="about-column">
-          <h3>Jeg er nysgerrig på</h3>
+      <div className="about-layout">
+        <img
+          alt="Collage af billeder af Sebastian i form af et logo"
+          className="about-photo"
+          src={`${import.meta.env.BASE_URL}logopicture.svg`}
+        />
+        <div className="about-text">
           <p>
-            Brugeroplevelser, visuel identitet og hvordan kode bliver til
-            noget brugbart.
+            Jeg er Sebastian, frontend-udvikler under uddannelse. Jeg bygger
+            webprojekter med fokus på ren kode, gode brugeroplevelser og et
+            iøjnefaldende design.
+          </p>
+          <p>
+            Jeg arbejder med React, HTML, CSS, JavaScript, designproces og
+            digitale produkter — og er nysgerrig på brugeroplevelser, visuel
+            identitet og hvordan kode bliver til noget brugbart.
           </p>
         </div>
       </div>

@@ -3,21 +3,30 @@
   padding-bottom: 8rem;
 }
 
-.about-columns {
+.page.about-page .eyebrow {
+  margin-bottom: 3rem;
+}
+
+.about-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: minmax(240px, 380px) 1fr;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.about-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.about-text {
+  display: grid;
   gap: 1.5rem;
-  margin-top: 2.5rem;
+  max-width: 560px;
 }
 
-.about-column {
-  border: 1px solid var(--color-border);
-  border-radius: 0.75rem;
-  background: var(--color-card-bg);
-  padding: 1.5rem;
-}
-
-.about-column h3 {
+.about-text p {
   font-size: 1.15rem;
 }
 
@@ -25,5 +34,15 @@
   .page.about-page {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-photo {
+    max-width: 280px;
+    margin: 0 auto;
   }
 }
