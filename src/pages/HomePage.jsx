@@ -4,7 +4,7 @@ import "../css/pages/home.css";
 
 function HomePage() {
   return (
-    <div className="page">
+    <div className="page home-page">
       <section className="hero-section">
         <h1>Sebastian</h1>
         <p className="hero-tagline">
@@ -21,21 +21,15 @@ function HomePage() {
         <div className="project-feature-list" aria-label="Projektliste">
           {projects.map((project) => (
             <article className="project-feature" key={project.slug}>
-              <div className="project-feature-media">
-                <img src={project.image} alt={`Preview af ${project.title}`} />
-              </div>
               <div className="project-feature-content">
-                <p className="eyebrow">{project.year}</p>
                 <h3>{project.title}</h3>
                 <p>{project.summary}</p>
-                <ul className="tag-list">
-                  {project.tags.map((tag) => (
-                    <li key={tag}>{tag}</li>
-                  ))}
-                </ul>
                 <Link className="project-feature-link" to={`/projects/${project.slug}`}>
                   Se projekt →
                 </Link>
+              </div>
+              <div className="project-feature-media">
+                <img src={project.image} alt={`Preview af ${project.title}`} />
               </div>
             </article>
           ))}
