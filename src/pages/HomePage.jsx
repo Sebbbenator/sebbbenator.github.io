@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { Link } from "react-router";
 import projects from "../data/projects";
 import "../css/pages/home.css";
@@ -14,6 +15,26 @@ const floatingLogos = [
 ];
 
 function HomePage() {
+  const projectListRef = useRef(null);
+
+  useEffect(() => {
+    const items = projectListRef.current?.querySelectorAll(".project-feature");
+    if (!items || items.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle("is-visible", entry.isIntersecting);
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    items.forEach((item) => observer.observe(item));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="page home-page">
       <section className="hero-section">
@@ -61,7 +82,7 @@ function HomePage() {
           <h2>Mine projekter</h2>
         </div>
 
-        <div className="project-feature-list" aria-label="Projektliste">
+        <div className="project-feature-list" aria-label="Projektliste" ref={projectListRef}>
           {projects.map((project) => (
             <article className="project-feature" key={project.slug}>
               <div className="project-feature-media">
@@ -81,6 +102,7 @@ function HomePage() {
                   </div>
                 )}
                 <h3>{project.title}</h3>
+                <p className="project-feature-year">{project.year}</p>
                 <ul className="project-feature-tags">
                   {project.tags.map((tag) => (
                     <li key={tag}>{tag}</li>

@@ -186,6 +186,36 @@
   scroll-margin-top: var(--nav-height);
 }
 
+.project-feature-media,
+.project-feature-content {
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.project-feature-media {
+  opacity: 0;
+  transform: translateX(-72px);
+}
+
+.project-feature-content {
+  opacity: 0;
+  transform: translateX(72px);
+}
+
+.project-feature.is-visible .project-feature-media,
+.project-feature.is-visible .project-feature-content {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-feature-media,
+  .project-feature-content {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 .project-feature-media {
   display: flex;
   align-items: center;
@@ -229,6 +259,13 @@
 .project-feature-content h3 {
   font-family: "Playfair Display", serif;
   font-size: clamp(2.75rem, 5vw, 4rem);
+  font-weight: 700;
+}
+
+.project-feature-year {
+  margin: -0.5rem 0 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
   font-weight: 700;
 }
 

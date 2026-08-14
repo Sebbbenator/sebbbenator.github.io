@@ -42,7 +42,7 @@ function App() {
         </Routes>
       </main>
 
-      {pathname !== "/about" && <Footer />}
+      {pathname !== "/about" && !pathname.startsWith("/projects/") && <Footer />}
     </>
   );
 }
