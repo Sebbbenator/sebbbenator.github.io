@@ -1,6 +1,7 @@
 const projects = [
   {
     slug: "web-app",
+    caseNumber: 1,
     title: "Hoomie",
     logos: [
       `${import.meta.env.BASE_URL}hoomielogo.svg`,
@@ -25,6 +26,7 @@ const projects = [
   },
   {
     slug: "customer-experience",
+    caseNumber: 2,
     title: "WANTED Archives",
     logos: [
       `${import.meta.env.BASE_URL}wantedlogo.svg`,
@@ -50,6 +52,7 @@ const projects = [
   },
   {
     slug: "exam-project",
+    caseNumber: 3,
     title: "Optimering af Akvarie projekt",
     logos: [
       `${import.meta.env.BASE_URL}storcenterNordLogo.svg`,
@@ -74,6 +77,7 @@ const projects = [
   },
   {
     slug: "boardbase",
+    caseNumber: 4,
     title: "Boardbase",
     year: "2025 - hjemmeprojekt",
     summary:
@@ -94,6 +98,7 @@ const projects = [
   },
   {
     slug: "homebase",
+    caseNumber: 5,
     title: "Homebase",
     year: "2025 - hjemmeprojekt",
     summary:

@@ -85,6 +85,11 @@ function HomePage() {
         <div className="project-feature-list" aria-label="Projektliste" ref={projectListRef}>
           {projects.map((project) => (
             <article className="project-feature" key={project.slug}>
+              {project.caseNumber && (
+                <p className="project-feature-case">
+                  Case {String(project.caseNumber).padStart(2, "0")}
+                </p>
+              )}
               <div className="project-feature-media">
                 <img src={project.image} alt={`Preview af ${project.title}`} />
               </div>
