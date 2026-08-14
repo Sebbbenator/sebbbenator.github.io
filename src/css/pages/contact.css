@@ -8,6 +8,6 @@
 }
 
 .contact-list a {
-  color: #5b21b6;
+  color: var(--color-accent-strong);
   font-weight: 800;
 }

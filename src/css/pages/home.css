@@ -139,7 +139,7 @@
 
 .hero-portrait-label {
   position: absolute;
-  top: -5%;
+  top: -6%;
   left: 47%;
   max-width: none;
   margin: 0;
@@ -150,7 +150,8 @@
   line-height: 1;
   letter-spacing: 0;
   white-space: nowrap;
-  transform: translateX(-50%);
+  text-shadow: 0.08em 0.05em 0 var(--color-accent);
+  transform: translateX(-50%) rotate(-0deg);
 }
 
 .hero-tagline {
