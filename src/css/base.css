@@ -4,7 +4,7 @@
 
   --color-bg: #f0e7d5;
   --color-text: #1d2430;
-  --color-heading: #111827;
+  --color-heading: #18181b;
   --color-body: #526173;
   --color-muted: #475569;
   --color-accent: #2f5fb3;
@@ -14,9 +14,9 @@
   --color-card-bg: #fffaf3;
   --color-white: #ffffff;
 
-  --color-footer-bg: #14233f;
+  --color-footer-bg: var(--color-heading);
   --color-footer-text: #f4f1ea;
-  --color-footer-muted: #9fb0c9;
+  --color-footer-muted: #9aa4b5;
 
   --nav-height: 4.75rem;
 

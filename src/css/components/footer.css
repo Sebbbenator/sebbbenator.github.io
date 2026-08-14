@@ -21,10 +21,11 @@
   color: var(--color-footer-muted);
   font-weight: 700;
   text-decoration: none;
+  transition: color 0.25s ease;
 }
 
 .footer-contact a:hover {
-  color: var(--color-footer-text);
+  color: var(--color-accent);
 }
 
 .footer-logo {
@@ -36,8 +37,8 @@
 }
 
 .footer-logo:hover {
-  filter: brightness(0) saturate(100%) invert(27%) sepia(89%) saturate(1826%)
-    hue-rotate(340deg) brightness(90%) contrast(89%);
+  filter: brightness(0) saturate(100%) invert(46%) sepia(72%) saturate(1247%)
+    hue-rotate(190deg) brightness(93%) contrast(93%);
 }
 
 .footer-year {
