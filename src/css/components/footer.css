@@ -1,7 +1,9 @@
 .site-footer {
   display: grid;
   justify-items: center;
+  align-content: center;
   gap: 2.5rem;
+  min-height: 100svh;
   padding: 6rem 2rem 4rem;
   background: var(--color-footer-bg);
   color: var(--color-footer-text);
@@ -30,6 +32,12 @@
   max-height: 140px;
   width: auto;
   filter: brightness(0) invert(1);
+  transition: filter 0.25s ease;
+}
+
+.footer-logo:hover {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(89%) saturate(1826%)
+    hue-rotate(340deg) brightness(90%) contrast(89%);
 }
 
 .footer-year {
